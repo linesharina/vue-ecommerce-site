@@ -19,6 +19,21 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/products',
+      name: 'products',
+      component: ProductsList
+    },
+    {
+      path: '/product/:slug',
+      name: 'product',
+      component: SingleProduct
+    },
+    {
+      path: '/add-product',
+      name: 'add-product',
+      component: AddProduct
     }
   ]
 })
