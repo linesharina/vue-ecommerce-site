@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
+import AddProduct from './views/AddProduct'
+import ProductsList from './views/ProductsList'
+import SingleProduct from './views/SingleProduct'
 
 Vue.use(Router)
 
