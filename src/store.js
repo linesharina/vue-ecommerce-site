@@ -39,5 +39,8 @@ export default new Vuex.Store({
       state.products.push(product)
     }
   },
-  actions: {}
+  actions: {},
+  getters: {
+    products: state => state.products
+  }
 })
