@@ -5,12 +5,20 @@
             <h2>{{ product.name }}</h2>
             <p class="description">{{ product.description }}</p>
             <p class="price">{{ product.price }}</p>
+            <button @click="deleteProduct(index)">ⓧ</button>
         </div>
     </div>
 </template>
+
 <script>
 export default {
     name: 'Products',
+    methods: {
+        deleteProduct(index) {
+            this.$store.commit('deleteProduct', index)
+        }
+    }
+}
 </script>
 
 <style scoped>
