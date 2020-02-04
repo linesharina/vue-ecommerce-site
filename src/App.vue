@@ -6,9 +6,20 @@
       <router-link to="/products">Products</router-link> |
       <router-link to="/add-product">Add Product</router-link> 
     </div>
+    <Cart />
     <router-view/>
   </div>
 </template>
+<script>
+    import Cart from "./components/Cart"
+
+    export default {
+      name: 'AddProduct',
+      components: {
+        Cart
+      }
+    }
+</script>
 
 <style>
 #app {
